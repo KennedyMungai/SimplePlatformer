@@ -22,3 +22,4 @@ __meta__ = {
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
+drag_margin_h_enabled = true
