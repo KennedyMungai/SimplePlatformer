@@ -19,3 +19,6 @@ shape = SubResource( 1 )
 __meta__ = {
 "_edit_group_": true
 }
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
