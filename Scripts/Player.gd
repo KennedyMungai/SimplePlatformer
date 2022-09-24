@@ -10,5 +10,7 @@ func _physics_process(delta: float) -> void:
 		motion.x = -500;
 	elif(Input.is_action_pressed("right")):
 		motion.x = 500;
+	else: 
+		motion.x = 0;
 		
 	move_and_slide(motion, Vector2.UP);
