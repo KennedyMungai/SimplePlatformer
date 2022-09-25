@@ -3,4 +3,4 @@ extends Control
 
 
 func _on_RestartButton_pressed() -> void:
-	pass # Replace with function body.
+	get_tree().change_scene("res://Scenes/Levels/Level1.tscn");
