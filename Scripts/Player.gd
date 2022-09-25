@@ -3,7 +3,7 @@ extends KinematicBody2D
 
 var motion = Vector2(0,0);
 
-const SPEED = 500;
+const SPEED = 750;
 const GRAVITY = 250;
 const JUMP_SPEED = 3000;
 
@@ -12,9 +12,9 @@ func _physics_process(delta: float) -> void:
 	jump();
 	
 	if(Input.is_action_pressed("left") and not Input.is_action_pressed("right")):
-		motion.x = -500;
+		motion.x = -SPEED;
 	elif(Input.is_action_pressed("right") and not Input.is_action_pressed("left")):
-		motion.x = 500;
+		motion.x = SPEED;
 	else: 
 		motion.x = 0;
 		
