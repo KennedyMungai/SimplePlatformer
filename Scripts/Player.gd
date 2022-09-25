@@ -50,4 +50,4 @@ func animate() -> void:
 	
 	
 func end_game() -> void:
-	pass;
+	get_tree().quit();
