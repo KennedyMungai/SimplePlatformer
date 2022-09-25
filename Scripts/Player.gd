@@ -10,6 +10,9 @@ const JUMP_SPEED = 5000;
 func _physics_process(delta: float) -> void:
 	apply_gravity();
 	
+	if(Input.is_action_just_pressed("jump") and is_on_floor()):
+		motion.y += JUMP_SPEED;
+	
 	if(Input.is_action_pressed("left") and not Input.is_action_pressed("right")):
 		motion.x = -500;
 	elif(Input.is_action_pressed("right") and not Input.is_action_pressed("left")):
