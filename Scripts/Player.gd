@@ -7,6 +7,8 @@ const SPEED = 750;
 const GRAVITY = 250;
 const JUMP_SPEED = 3000;
 
+signal animate;
+
 func _physics_process(delta: float) -> void:
 	apply_gravity();
 	jump();
