@@ -31,10 +31,8 @@ func jump() -> void:
 func move() -> void:
 	if(Input.is_action_pressed("left") and not Input.is_action_pressed("right")):
 		motion.x = -SPEED;
-		$AnimatedSprite.flip_h = true;
 	elif(Input.is_action_pressed("right") and not Input.is_action_pressed("left")):
 		motion.x = SPEED;
-		$AnimatedSprite.flip_h = false;
 	else: 
 		motion.x = 0;
 
@@ -42,8 +40,12 @@ func move() -> void:
 func animate() -> void:
 	if(motion.y < 0):
 		$PlayerAnimation.play("jump");
-	elif(motion.x != 0):
+	elif(motion.x > 0):
 		$PlayerAnimation.play("walk");
+		$PlayerAnimation.flip_h = false;
+	elif(motion.x < 0):
+		$PlayerAnimation.play("walk");
+		$PlayerAnimation.flip_h = true;
 	else:
 		$PlayerAnimation.play("idle");
 	
