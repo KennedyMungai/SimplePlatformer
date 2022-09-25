@@ -71,4 +71,6 @@ texture = ExtResource( 7 )
 [node name="PlayerAnimation" parent="." instance=ExtResource( 1 )]
 script = ExtResource( 3 )
 
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+
 [connection signal="animate" from="." to="PlayerAnimation" method="_on_Player_animate"]
