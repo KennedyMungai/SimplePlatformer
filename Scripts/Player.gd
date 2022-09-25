@@ -41,9 +41,9 @@ func move() -> void:
 
 func animate() -> void:
 	if(motion.y < 0):
-		$AnimatedSprite.play("jump");
+		$PlayerAnimation.play("jump");
 	elif(motion.x != 0):
-		$AnimatedSprite.play("walk");
+		$PlayerAnimation.play("walk");
 	else:
-		$AnimatedSprite.play("idle");
+		$PlayerAnimation.play("idle");
 	
