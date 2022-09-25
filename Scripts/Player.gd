@@ -7,6 +7,8 @@ const SPEED = 500;
 const GRAVITY = 500;
 
 func _physics_process(delta: float) -> void:
+	motion += GRAVITY;
+	
 	if(Input.is_action_pressed("left") and not Input.is_action_pressed("right")):
 		motion.x = -500;
 	elif(Input.is_action_pressed("right") and not Input.is_action_pressed("left")):
