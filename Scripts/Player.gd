@@ -35,3 +35,7 @@ func move() -> void:
 		motion.x = SPEED;
 	else: 
 		motion.x = 0;
+
+
+func animate() -> void:
+	$AnimatedSprite.play("idle");
