@@ -50,4 +50,4 @@ func animate() -> void:
 	
 	
 func end_game() -> void:
-	get_tree().quit();
+	get_tree().change_scene("res://Scenes/GameOver.tscn");
