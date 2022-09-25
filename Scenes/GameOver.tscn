@@ -57,3 +57,5 @@ margin_left = 498.0
 margin_right = 550.0
 margin_bottom = 96.0
 texture_normal = ExtResource( 3 )
+
+[connection signal="pressed" from="CenterContainer/VBoxContainer/HBoxContainer/RestartButton" to="." method="_on_RestartButton_pressed"]
