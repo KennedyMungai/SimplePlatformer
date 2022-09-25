@@ -1,6 +1,7 @@
 extends KinematicBody2D
 
 var motion = Vector2(0,0);
+var lives = 3;
 
 const SPEED = 750;
 const GRAVITY = 250;
@@ -51,3 +52,11 @@ func animate() -> void:
 	
 func end_game() -> void:
 	get_tree().change_scene("res://Scenes/GameOver.tscn");
+
+
+func hurt() ->void:
+	motion.y -= JUMP_SPEED;
+	lives -= 1;
+	
+	if(lives < 0):
+		end_game();
