@@ -9,7 +9,7 @@ height = 70.0
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [  ],
+"frames": [ ExtResource( 1 ) ],
 "loop": true,
 "name": "idle",
 "speed": 5.0
