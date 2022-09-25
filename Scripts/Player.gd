@@ -40,6 +40,8 @@ func move() -> void:
 
 
 func animate() -> void:
+	emit_signal("animate", self, "animate");
+	
 #	if(motion.y < 0):
 #		$PlayerAnimation.play("jump");
 #	elif(motion.x > 0):
