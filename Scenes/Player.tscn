@@ -26,4 +26,17 @@ smoothing_enabled = true
 [node name="PlayerAnimation" parent="." instance=ExtResource( 1 )]
 script = ExtResource( 3 )
 
+[node name="ViewportContainer" type="ViewportContainer" parent="."]
+margin_left = 381.0
+margin_top = -297.0
+margin_right = 509.0
+margin_bottom = -169.0
+
+[node name="Viewport" type="Viewport" parent="ViewportContainer"]
+size = Vector2( 128, 128 )
+
+[node name="Camera2D" type="Camera2D" parent="ViewportContainer/Viewport"]
+z_index = 8
+current = true
+
 [connection signal="animate" from="." to="PlayerAnimation" method="_on_Player_animate"]
