@@ -35,6 +35,7 @@ func apply_gravity() -> void:
 func jump() -> void:
 	if(Input.is_action_just_pressed("jump") and is_on_floor()):
 		motion.y -= JUMP_SPEED;
+		
 	
 
 func move() -> void:
