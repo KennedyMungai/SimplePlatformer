@@ -55,6 +55,7 @@ func end_game() -> void:
 
 
 func hurt() ->void:
+	position.y -= 1;
 	motion.y -= JUMP_SPEED;
 	lives -= 1;
 	
