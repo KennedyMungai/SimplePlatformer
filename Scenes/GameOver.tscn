@@ -4,7 +4,7 @@
 [ext_resource path="res://Fonts/candles_.ttf" type="DynamicFontData" id=2]
 
 [sub_resource type="DynamicFont" id=1]
-size = 50
+size = 75
 font_data = ExtResource( 2 )
 
 [node name="GameOver" type="Control"]
@@ -22,13 +22,14 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
-margin_left = 368.0
-margin_top = 268.0
-margin_right = 655.0
-margin_bottom = 332.0
+margin_left = 210.0
+margin_top = 252.0
+margin_right = 814.0
+margin_bottom = 348.0
 
 [node name="Label" type="Label" parent="CenterContainer/VBoxContainer"]
-margin_right = 287.0
-margin_bottom = 64.0
+margin_right = 604.0
+margin_bottom = 96.0
+custom_colors/font_color = Color( 1, 0, 0, 1 )
 custom_fonts/font = SubResource( 1 )
-text = "Test String"
+text = "GAME OVER!"
