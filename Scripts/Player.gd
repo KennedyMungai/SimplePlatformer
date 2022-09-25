@@ -49,3 +49,5 @@ func animate() -> void:
 	emit_signal("animate", motion);
 	
 	
+func end_game() -> void:
+	pass;
