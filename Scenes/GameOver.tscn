@@ -24,9 +24,9 @@ anchor_bottom = 1.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
 margin_left = 210.0
-margin_top = 252.0
+margin_top = 250.0
 margin_right = 814.0
-margin_bottom = 348.0
+margin_bottom = 350.0
 
 [node name="Label" type="Label" parent="CenterContainer/VBoxContainer"]
 margin_right = 604.0
@@ -34,3 +34,8 @@ margin_bottom = 96.0
 custom_colors/font_color = Color( 1, 0, 0, 1 )
 custom_fonts/font = SubResource( 1 )
 text = "GAME OVER!"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer"]
+margin_top = 100.0
+margin_right = 604.0
+margin_bottom = 100.0
