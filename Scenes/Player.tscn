@@ -25,3 +25,5 @@ smoothing_enabled = true
 
 [node name="PlayerAnimation" parent="." instance=ExtResource( 1 )]
 script = ExtResource( 3 )
+
+[connection signal="animate" from="." to="PlayerAnimation" method="_on_Player_animate"]
