@@ -31,7 +31,7 @@ drag_margin_v_enabled = true
 smoothing_enabled = true
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="Camera2D"]
-scroll_offset = Vector2( 0, -750 )
+scroll_base_offset = Vector2( 0, -1000 )
 scroll_ignore_camera_zoom = true
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="Camera2D/ParallaxBackground"]
