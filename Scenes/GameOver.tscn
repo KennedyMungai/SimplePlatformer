@@ -50,7 +50,7 @@ custom_colors/font_color = Color( 0.0431373, 0.192157, 0.0588235, 1 )
 custom_fonts/font = SubResource( 1 )
 text = "Try Again?"
 
-[node name="TextureButton" type="TextureButton" parent="CenterContainer/VBoxContainer/HBoxContainer"]
+[node name="RestartButton" type="TextureButton" parent="CenterContainer/VBoxContainer/HBoxContainer"]
 margin_left = 498.0
 margin_right = 550.0
 margin_bottom = 96.0
