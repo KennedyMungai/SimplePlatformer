@@ -5,7 +5,7 @@ var motion = Vector2(0,0);
 
 const SPEED = 500;
 const GRAVITY = 250;
-const JUMP_SPEED = 2500;
+const JUMP_SPEED = 3000;
 
 func _physics_process(delta: float) -> void:
 	apply_gravity();
