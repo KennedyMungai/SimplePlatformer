@@ -1,6 +1,7 @@
 extends KinematicBody2D
 
 onready var map = preload("res://Scripts/Minimap.gd");
+var mm;
 
 var motion = Vector2(0,0);
 
@@ -9,6 +10,11 @@ const GRAVITY = 250;
 const JUMP_SPEED = 3000;
 
 signal animate;
+
+
+func _ready() -> void:
+	set_mm();
+
 
 func _physics_process(delta: float) -> void:
 	apply_gravity();
@@ -44,4 +50,6 @@ func animate() -> void:
 	emit_signal("animate", motion);
 	
 	
-	
+func set_mm():
+	mm = map.instance();
+	$Camera2D.add_child(mm);
