@@ -41,13 +41,13 @@ margin_right = 604.0
 margin_bottom = 196.0
 
 [node name="Label2" type="Label" parent="CenterContainer/VBoxContainer/HBoxContainer"]
-margin_right = 138.0
+margin_right = 440.0
 margin_bottom = 96.0
 custom_colors/font_color = Color( 0.0431373, 0.192157, 0.0588235, 1 )
 custom_fonts/font = SubResource( 1 )
-text = "ddd"
+text = "Try Again?"
 
 [node name="TextureButton" type="TextureButton" parent="CenterContainer/VBoxContainer/HBoxContainer"]
-margin_left = 142.0
-margin_right = 142.0
+margin_left = 444.0
+margin_right = 444.0
 margin_bottom = 96.0
