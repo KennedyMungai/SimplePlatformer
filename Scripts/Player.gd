@@ -62,6 +62,8 @@ func hurt() ->void:
 	position.y -= 1;
 	yield(get_tree(), "idle_frame");
 	motion.y -= JUMP_SPEED;
+	audioStreamPlayer.stream = load("res://SFX/pain.ogg");
+	audioStreamPlayer.play();
 	lives -= 1;
 	
 	if(lives < 0):
