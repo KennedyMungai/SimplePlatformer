@@ -38,6 +38,7 @@ func jump() -> void:
 	if(Input.is_action_just_pressed("jump") and is_on_floor()):
 		motion.y -= JUMP_SPEED;
 		audioStreamPlayer.stream = load("res://SFX/Chiptune_Adventures_1.ogg");
+		audioStreamPlayer.play();
 	
 
 func move() -> void:
