@@ -26,6 +26,8 @@ drag_margin_h_enabled = true
 drag_margin_v_enabled = true
 smoothing_enabled = true
 
+[node name="ParallaxBackground" type="ParallaxBackground" parent="Camera2D"]
+
 [node name="PlayerAnimation" parent="." instance=ExtResource( 1 )]
 script = ExtResource( 3 )
 
