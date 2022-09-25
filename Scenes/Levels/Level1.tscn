@@ -10,3 +10,4 @@
 [node name="Platforms" type="TileMap" parent="."]
 tile_set = ExtResource( 2 )
 format = 1
+tile_data = PoolIntArray( 196600, 0, 0, 196606, 0, 0, 131076, 0, 0, 131082, 0, 0, 196624, 7, 0, 327699, 7, 0, 327702, 6, 0 )
