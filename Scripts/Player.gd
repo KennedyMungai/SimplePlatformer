@@ -1,5 +1,6 @@
 extends KinematicBody2D
 
+onready var map = preload("res://Scripts/Minimap.gd");
 
 var motion = Vector2(0,0);
 
