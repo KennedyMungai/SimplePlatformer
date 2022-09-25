@@ -1,7 +1,5 @@
 extends KinematicBody2D
 
-onready var audioStreamPlayer = preload("res://Scenes/AudioPlayer.tscn").instance();
-
 var motion = Vector2(0,0);
 var lives = 3;
 
@@ -37,8 +35,6 @@ func apply_gravity() -> void:
 func jump() -> void:
 	if(Input.is_action_just_pressed("jump") and is_on_floor()):
 		motion.y -= JUMP_SPEED;
-		audioStreamPlayer.stream = load("res://SFX/Chiptune_Adventures_1.ogg");
-		audioStreamPlayer.play();
 	
 
 func move() -> void:
@@ -62,8 +58,6 @@ func hurt() ->void:
 	position.y -= 1;
 	yield(get_tree(), "idle_frame");
 	motion.y -= JUMP_SPEED;
-	audioStreamPlayer.stream = load("res://SFX/pain.ogg");
-	audioStreamPlayer.play();
 	lives -= 1;
 	
 	if(lives < 0):
