@@ -38,4 +38,10 @@ func move() -> void:
 
 
 func animate() -> void:
-	$AnimatedSprite.play("idle");
+	if(motion.y < 0):
+		$AnimatedSprite.play("jump");
+	elif(motion.x != 0):
+		$AnimatedSprite.play("walk");
+	else:
+		$AnimatedSprite.play("idle");
+	
