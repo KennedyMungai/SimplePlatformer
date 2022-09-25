@@ -12,7 +12,7 @@ signal animate;
 
 func _physics_process(delta: float) -> void:
 	if(position.y > WORLD_LIMIT):
-		pass;
+		end_game();
 	
 	apply_gravity();
 	jump();
