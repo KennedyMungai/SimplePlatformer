@@ -4,6 +4,7 @@ extends KinematicBody2D
 var motion = Vector2(0,0);
 
 const SPEED = 500;
+const GRAVITY = 500;
 
 func _physics_process(delta: float) -> void:
 	if(Input.is_action_pressed("left") and not Input.is_action_pressed("right")):
