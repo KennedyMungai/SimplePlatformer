@@ -5,6 +5,7 @@
 
 [sub_resource type="DynamicFont" id=1]
 size = 75
+use_filter = true
 font_data = ExtResource( 2 )
 
 [node name="GameOver" type="Control"]
