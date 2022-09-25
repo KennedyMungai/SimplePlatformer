@@ -49,6 +49,16 @@ margin_right = 40.0
 margin_bottom = 40.0
 texture = ExtResource( 5 )
 
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="Camera2D/ParallaxBackground"]
+motion_scale = Vector2( 0.5, 1 )
+motion_offset = Vector2( 0, -750 )
+motion_mirroring = Vector2( 2048, 0 )
+
+[node name="TextureRect" type="TextureRect" parent="Camera2D/ParallaxBackground/ParallaxLayer3"]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 5 )
+
 [node name="PlayerAnimation" parent="." instance=ExtResource( 1 )]
 script = ExtResource( 3 )
 
