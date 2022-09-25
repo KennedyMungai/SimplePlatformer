@@ -41,7 +41,7 @@ texture = ExtResource( 4 )
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="Camera2D/ParallaxBackground"]
 motion_offset = Vector2( 0, -750 )
-motion_mirroring = Vector2( 2048, 2048 )
+motion_mirroring = Vector2( 2048, 0 )
 
 [node name="TextureRect" type="TextureRect" parent="Camera2D/ParallaxBackground/ParallaxLayer2"]
 margin_right = 40.0
