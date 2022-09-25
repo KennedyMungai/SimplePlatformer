@@ -31,8 +31,10 @@ func jump() -> void:
 func move() -> void:
 	if(Input.is_action_pressed("left") and not Input.is_action_pressed("right")):
 		motion.x = -SPEED;
+		$AnimatedSprite.flip_h = true;
 	elif(Input.is_action_pressed("right") and not Input.is_action_pressed("left")):
 		motion.x = SPEED;
+		$AnimatedSprite.flip_h = false;
 	else: 
 		motion.x = 0;
 
