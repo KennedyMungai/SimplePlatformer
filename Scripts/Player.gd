@@ -5,7 +5,7 @@ var motion = Vector2(0,0);
 const SPEED = 750;
 const GRAVITY = 250;
 const JUMP_SPEED = 3000;
-const WORLD_LIMIT = 3000;
+const WORLD_LIMIT = 5000;
 
 signal animate;
 
