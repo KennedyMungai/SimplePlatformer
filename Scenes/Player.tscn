@@ -40,6 +40,7 @@ margin_bottom = 40.0
 texture = ExtResource( 4 )
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="Camera2D/ParallaxBackground"]
+motion_scale = Vector2( 0.5, 1 )
 motion_offset = Vector2( 0, -750 )
 motion_mirroring = Vector2( 2048, 0 )
 
