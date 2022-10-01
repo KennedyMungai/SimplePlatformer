@@ -15,9 +15,26 @@ collision_layer = 2
 format = 1
 tile_data = PoolIntArray( -327601, 6, 0, 46, 6, 0, 52, 6, 0, 58, 6, 0, 89, 6, 0, 65579, 5, 0, 196600, 0, 0, 196606, 0, 0, 131076, 0, 0, 131082, 0, 0, 131112, 1, 0, 196624, 7, 0, 196642, 0, 0, 262172, 0, 0, 262208, 6, 0, 262226, 6, 0, 327699, 7, 0, 327702, 6, 0, 589896, 6, 0, 983102, 6, 0, 1310761, 6, 0, 1376310, 6, 0, 1376338, 6, 0, 1835079, 6, 0 )
 
-[node name="Hazards" parent="." instance=ExtResource( 3 )]
-position = Vector2( 400, 72 )
-
 [node name="BGM" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )
 autoplay = true
+
+[node name="Hazards" type="Node" parent="."]
+
+[node name="Hazards" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 400, 72 )
+
+[node name="Hazards2" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 1528, 280 )
+
+[node name="Hazards3" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 2008, 208 )
+
+[node name="Hazards4" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 3152, -56 )
+
+[node name="Hazards5" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 3888, -56 )
+
+[node name="Hazards6" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 5416, 200 )
