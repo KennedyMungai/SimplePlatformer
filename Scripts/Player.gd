@@ -1,5 +1,7 @@
 extends KinematicBody2D
 
+export var boost_multiplier = 2;
+
 var motion = Vector2(0,0);
 var lives = 3;
 
