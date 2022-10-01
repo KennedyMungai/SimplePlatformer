@@ -38,6 +38,7 @@ tracks/0/keys = {
 }
 
 [node name="JumpPad" type="Area2D"]
+collision_layer = 8
 script = ExtResource( 3 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
