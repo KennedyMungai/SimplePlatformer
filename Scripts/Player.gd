@@ -64,3 +64,7 @@ func hurt() ->void:
 	
 	if(lives < 0):
 		end_game();
+
+
+func boost() -> void:
+	motion.y -= JUMP_SPEED * BOOST_MULTIPLIER;
