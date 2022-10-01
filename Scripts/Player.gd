@@ -1,7 +1,5 @@
 extends KinematicBody2D
 
-export var boost_multiplier = 2;
-
 var motion = Vector2(0,0);
 var lives = 3;
 
@@ -9,6 +7,7 @@ const SPEED = 750;
 const GRAVITY = 250;
 const JUMP_SPEED = 3000;
 const WORLD_LIMIT = 8000;
+const BOOST_MULTIPLIER = 2;
 
 signal animate;
 
