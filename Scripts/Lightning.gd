@@ -10,6 +10,7 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	position.y += SPEED * delta;
+	manage_collision();
 
 
 func _on_VisibilityNotifier2D_screen_exited() -> void:
