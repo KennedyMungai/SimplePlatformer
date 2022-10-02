@@ -7,4 +7,4 @@ func _process(delta: float) -> void:
 		
 
 func fire() -> void:
-	add_child(load("res://Scenes/Lightning.tscn"));
+	add_child(load("res://Scenes/Lightning.tscn").instance());
