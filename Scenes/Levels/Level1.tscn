@@ -22,6 +22,7 @@ tile_data = PoolIntArray( -327601, 6, 0, 46, 6, 0, 52, 6, 0, 58, 6, 0, 89, 6, 0,
 
 [node name="BGM" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )
+volume_db = -10.0
 autoplay = true
 
 [node name="Hazards" type="Node" parent="."]
