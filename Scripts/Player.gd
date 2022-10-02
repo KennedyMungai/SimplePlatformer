@@ -61,8 +61,8 @@ func hurt() ->void:
 	yield(get_tree(), "idle_frame");
 	motion.y -= JUMP_SPEED;
 	
-	if(lives < 0):
-		end_game();
+#	if(lives < 0):
+#		end_game();
 
 
 func boost() -> void:
