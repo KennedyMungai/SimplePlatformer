@@ -2,6 +2,7 @@ extends Node2D
 
 
 var lives = 3;
+var coins = 0;
 
 
 func _ready() -> void:
