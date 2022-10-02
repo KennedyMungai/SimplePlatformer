@@ -11,10 +11,13 @@ func _ready() -> void:
 func hurt() -> void:
 	lives -= 1;
 	$Player.hurt();
-	get_tree().call_group("GUI", "update_lives", lives);
 
 	if(lives < 0):
 		end_game();
+
+
+func update_GUI() -> void:
+	get_tree().call_group("GUI", "update_lives", lives);	
 
 
 func end_game() -> void:
