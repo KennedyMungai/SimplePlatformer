@@ -39,3 +39,4 @@ func coin_up() -> void:
 		
 func life_up() -> void:
 	lives += 1;
+	update_GUI();
