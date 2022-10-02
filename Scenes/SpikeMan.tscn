@@ -81,12 +81,12 @@ tracks/2/keys = {
 [node name="SpikeMan" type="Node2D"]
 
 [node name="Area2D" type="Area2D" parent="."]
+collision_layer = 4
 script = ExtResource( 4 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Area2D"]
 frames = SubResource( 1 )
 animation = "walk"
-frame = 1
 playing = true
 flip_h = true
 
