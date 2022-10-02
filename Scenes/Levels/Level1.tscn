@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://TileSets/Platforms.tres" type="TileSet" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://Scenes/GUI.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Scenes/Coin.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Scenes/SpikeMan.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Scenes/Cloud.tscn" type="PackedScene" id=10]
 
 [node name="Level1" type="Node2D"]
 script = ExtResource( 6 )
@@ -140,3 +141,7 @@ position = Vector2( 5248, -400 )
 
 [node name="SpikeMan6" parent="SpikeMen" instance=ExtResource( 9 )]
 position = Vector2( 5896, -80 )
+
+[node name="Clouds" type="Node" parent="."]
+
+[node name="Cloud" parent="Clouds" instance=ExtResource( 10 )]
