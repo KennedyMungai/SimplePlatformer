@@ -5,7 +5,7 @@ var lives = 3;
 
 const SPEED = 750;
 const GRAVITY = 250;
-const JUMP_SPEED = 3000;
+const JUMP_SPEED = 4500;
 const WORLD_LIMIT = 8000;
 const BOOST_MULTIPLIER = 2;
 
