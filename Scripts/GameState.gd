@@ -40,3 +40,7 @@ func coin_up() -> void:
 func life_up() -> void:
 	lives += 1;
 	update_GUI();
+
+
+func win_game() -> void:
+	get_tree().change_scene("res://Scenes/Win.tscn");
