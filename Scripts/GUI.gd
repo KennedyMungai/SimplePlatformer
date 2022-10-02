@@ -3,3 +3,7 @@ extends CanvasLayer
 
 func _ready() -> void:
 	$Control/TextureRect/HBoxContainer/LivesDisplay.text = "3";
+
+
+func hurt(lives_left) -> void:
+	pass;
