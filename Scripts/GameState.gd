@@ -14,3 +14,7 @@ func hurt() -> void:
 
 	if(lives < 0):
 		end_game();
+
+
+func end_game() -> void:
+	get_tree().change_scene("res://Scenes/GameOver.tscn");
