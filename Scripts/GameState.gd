@@ -25,3 +25,7 @@ func update_GUI() -> void:
 
 func end_game() -> void:
 	get_tree().change_scene("res://Scenes/GameOver.tscn");
+
+
+func coin_up() -> void:
+	coins += 1;
