@@ -11,3 +11,4 @@ func _ready() -> void:
 func hurt() -> void:
 	lives -= 1;
 	$Player.hurt();
+	print(lives);
