@@ -23,3 +23,4 @@ func manage_collision() -> void:
 	for object in collider:
 		if object.name == "Player":
 			get_tree().call_group("GameState", "hurt");
+		queue_free();
