@@ -6,6 +6,7 @@ var lives = 3;
 
 func _ready() -> void:
 	add_to_group("GameState");
+	update_GUI();
 
 
 func hurt() -> void:
