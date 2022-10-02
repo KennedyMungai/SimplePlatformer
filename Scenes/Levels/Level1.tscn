@@ -55,3 +55,5 @@ position = Vector2( 4720, 1752 )
 
 [node name="JumpPad4" parent="JumpPads" instance=ExtResource( 5 )]
 position = Vector2( 5464, 1304 )
+
+[node name="GUI" type="CanvasLayer" parent="."]
