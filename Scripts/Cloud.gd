@@ -7,4 +7,4 @@ func _process(delta: float) -> void:
 		
 
 func fire() -> void:
-	add_child(load("res://Scenes/Lightning.tscn").instance());
+	$Sprite/RayCast2D.add_child(load("res://Scenes/Lightning.tscn").instance());
