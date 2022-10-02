@@ -14,3 +14,7 @@ func fire() -> void:
 		$Sprite/RayCast2D.add_child(load("res://Scenes/Lightning.tscn").instance());
 		$Sprite/Timer.start();
 		timeout = true;
+
+
+func _on_Timer_timeout() -> void:
+	timeout = false;
