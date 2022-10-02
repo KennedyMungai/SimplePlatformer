@@ -6,4 +6,4 @@ func _ready() -> void:
 
 
 func hurt(lives_left) -> void:
-	pass;
+	$Control/TextureRect/HBoxContainer/LivesDisplay.text = str(lives_left);
