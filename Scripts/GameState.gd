@@ -5,7 +5,7 @@ var lives = 3;
 
 
 func _ready() -> void:
-	add_to_group("game_state");
+	add_to_group("GameState");
 
 
 func hurt() -> void:
