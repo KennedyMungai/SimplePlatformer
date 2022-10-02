@@ -6,12 +6,13 @@ var lives = 3;
 
 func _ready() -> void:
 	add_to_group("GameState");
-	update_GUI();
+	update_GUI(); 
 
 
 func hurt() -> void:
 	lives -= 1;
 	$Player.hurt();
+	update_GUI();
 
 	if(lives < 0):
 		end_game();
