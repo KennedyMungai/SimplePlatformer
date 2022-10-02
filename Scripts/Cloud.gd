@@ -1,6 +1,9 @@
 extends Node2D
 
 
+var timeout: bool = false;
+
+
 func _process(delta: float) -> void:
 	if $Sprite/RayCast2D.is_colliding():
 		fire();
