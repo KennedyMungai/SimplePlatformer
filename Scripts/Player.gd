@@ -27,6 +27,8 @@ func _physics_process(delta: float) -> void:
 func apply_gravity() -> void:
 	if(!is_on_floor()):
 		motion.y += GRAVITY;
+	elif(is_on_floor() and motion.y > 0):
+		motion.y = 0;
 	elif(is_on_ceiling()):
 		motion.y = 1;
 	else: 
@@ -59,7 +61,7 @@ func end_game() -> void:
 func hurt() ->void:
 	position.y -= 1;
 	yield(get_tree(), "idle_frame");
-	motion.y -= JUMP_SPEED;
+	motion.y = -JUMP_SPEED;
 
 
 func boost() -> void:
