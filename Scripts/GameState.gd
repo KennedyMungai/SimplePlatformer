@@ -11,4 +11,6 @@ func _ready() -> void:
 func hurt() -> void:
 	lives -= 1;
 	$Player.hurt();
-	print(lives);
+
+	if(lives < 0):
+		end_game();
