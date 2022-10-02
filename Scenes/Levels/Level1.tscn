@@ -146,3 +146,36 @@ position = Vector2( 5896, -80 )
 
 [node name="Cloud" parent="Clouds" instance=ExtResource( 10 )]
 position = Vector2( 952, -744 )
+
+[node name="Cloud2" parent="Clouds" instance=ExtResource( 10 )]
+position = Vector2( 1824, -496 )
+
+[node name="Cloud3" parent="Clouds" instance=ExtResource( 10 )]
+position = Vector2( 2856, -696 )
+
+[node name="Cloud4" parent="Clouds" instance=ExtResource( 10 )]
+position = Vector2( 3816, -496 )
+
+[node name="Cloud5" parent="Clouds" instance=ExtResource( 10 )]
+position = Vector2( 6072, -752 )
+
+[node name="Cloud7" parent="Clouds" instance=ExtResource( 10 )]
+position = Vector2( 4568, -72 )
+
+[node name="Cloud6" parent="Clouds" instance=ExtResource( 10 )]
+position = Vector2( 4632, -544 )
+
+[node name="Cloud8" parent="Clouds" instance=ExtResource( 10 )]
+position = Vector2( 2810, 656 )
+
+[node name="Cloud9" parent="Clouds" instance=ExtResource( 10 )]
+position = Vector2( 3640, 1016 )
+
+[node name="Cloud10" parent="Clouds" instance=ExtResource( 10 )]
+position = Vector2( 4152, 688 )
+
+[node name="Cloud11" parent="Clouds" instance=ExtResource( 10 )]
+position = Vector2( 5464, 744 )
+
+[node name="Cloud12" parent="Clouds" instance=ExtResource( 10 )]
+position = Vector2( 4776, 1456 )
