@@ -4,6 +4,7 @@
 
 [sub_resource type="Animation" id=1]
 resource_name = "CloudDrift"
+length = 8.0
 
 [node name="Cloud" type="Node2D"]
 
