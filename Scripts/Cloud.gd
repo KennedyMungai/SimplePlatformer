@@ -10,4 +10,5 @@ func _process(delta: float) -> void:
 		
 
 func fire() -> void:
-	$Sprite/RayCast2D.add_child(load("res://Scenes/Lightning.tscn").instance());
+	if not timeout:
+		$Sprite/RayCast2D.add_child(load("res://Scenes/Lightning.tscn").instance());
