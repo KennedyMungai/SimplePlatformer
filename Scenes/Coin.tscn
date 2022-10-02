@@ -12,7 +12,7 @@ animations = [ {
 "frames": [ ExtResource( 1 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 2 ), ExtResource( 4 ), ExtResource( 3 ) ],
 "loop": true,
 "name": "spin",
-"speed": 5.0
+"speed": 10.0
 } ]
 
 [sub_resource type="CircleShape2D" id=2]
@@ -55,6 +55,7 @@ script = ExtResource( 6 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
 animation = "spin"
+playing = true
 
 [node name="Area2D" type="Area2D" parent="."]
 collision_layer = 8
