@@ -30,7 +30,7 @@ func end_game() -> void:
 
 func coin_up() -> void:
 	coins += 1;
-	get_tree().call_group("GUI", "update_coins", coins);
+	update_GUI();
 	var multiple_of_coins = (coins % target_number_of_coins) == 0;
 	
 	if multiple_of_coins:
