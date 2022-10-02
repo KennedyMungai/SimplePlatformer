@@ -21,7 +21,7 @@ func hurt() -> void:
 
 
 func update_GUI() -> void:
-	get_tree().call_group("GUI", "update_lives", lives);	
+	get_tree().call_group("GUI", "update_gui", lives, coins);	
 
 
 func end_game() -> void:
