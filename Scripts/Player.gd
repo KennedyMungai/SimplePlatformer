@@ -14,7 +14,7 @@ signal animate;
 
 func _physics_process(delta: float) -> void:
 	if(position.y > WORLD_LIMIT):
-		end_game();
+		get_tree().call_group("GameState", "end_game");
 	
 	apply_gravity();
 	jump();
