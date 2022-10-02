@@ -21,7 +21,7 @@ animations = [ {
 extents = Vector2( 45, 78 )
 
 [sub_resource type="Animation" id=3]
-resource_name = "Idle"
+resource_name = "SpikeMan"
 
 [node name="SpikeMan" type="Node2D"]
 
@@ -29,10 +29,11 @@ resource_name = "Idle"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Area2D"]
 frames = SubResource( 1 )
-animation = "walk"
+animation = "stand"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource( 2 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Area2D"]
-anims/Idle = SubResource( 3 )
+autoplay = "SpikeMan"
+anims/SpikeMan = SubResource( 3 )
