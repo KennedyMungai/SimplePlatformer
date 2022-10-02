@@ -1,8 +1,9 @@
 extends Node2D
 
 
-var lives = 3;
-var coins = 0;
+var lives:int = 3;
+var coins:int = 0;
+var target_number_of_coins:int = 5;
 
 
 func _ready() -> void:
