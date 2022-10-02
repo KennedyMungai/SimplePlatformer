@@ -145,3 +145,4 @@ position = Vector2( 5896, -80 )
 [node name="Clouds" type="Node" parent="."]
 
 [node name="Cloud" parent="Clouds" instance=ExtResource( 10 )]
+position = Vector2( 1016, -536 )
