@@ -22,4 +22,4 @@ func manage_collision() -> void:
 	
 	for object in collider:
 		if object.name == "Player":
-			print("Contact made");
+			get_tree().call_group("GameState", "hurt");
