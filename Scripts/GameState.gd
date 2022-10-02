@@ -35,3 +35,7 @@ func coin_up() -> void:
 	
 	if multiple_of_coins:
 		life_up();
+		
+		
+func life_up() -> void:
+	lives += 1;
