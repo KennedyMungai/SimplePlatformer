@@ -1,6 +1,7 @@
 extends Node2D
 
-const SPEED = 200;
+
+const SPEED = 300;
 
 
 func _ready() -> void:
